@@ -1,0 +1,328 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+header{
+    background-color: whitesmoke;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    align-items: center;
+    padding: 20px 200px;
+    transition: all 1s;
+}
+a{
+    text-decoration: none;
+}
+.navigation a{
+    color: black;
+    font-weight: 500;
+    font-size:  20px;
+    padding: 0 15px;
+}
+.navigation a:hover{
+    color: orange;
+}
+.download_cv {
+    width: 180px;
+    height: 35px;
+    font-weight: 500;
+    font-size: 20px;
+    padding: auto;
+    border-radius: 30px;
+    background-color: orange;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    transition: color 0.1s;
+}
+
+.download_cv:hover {
+    color: black;
+}
+
+.home{
+    width:100%;
+    height: 100vh;
+    padding: 200px 100px;
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-image: url("tst.webp");
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.home p{
+    font-size: 20px; 
+}
+/*  */
+.Services h6 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: orange;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Arial", sans-serif;
+}
+.Services h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Arial", sans-serif;
+}
+.allcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width:30em;
+    min-height:20em ;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 25px;
+    transition: 0.7s ease;
+}
+.card:hover {
+    transform: scale(1.1);
+    background-color: beige;
+    color: black;
+}
+.card .icon{
+    text-align: center;
+    font-size:  35px;;
+}
+.text {
+    text-align: center;
+}
+
+.text h3{
+    color: orange;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 10px 20px 10px;
+}
+.text p{
+    font-size: 20px;
+    margin: 10px;
+}
+/*  */
+.work h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Arial", sans-serif;
+}
+.workcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*  */
+.comments{
+    background-color: rgba(160, 149, 141, 0.234);
+}
+.comments h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 60px;
+    margin-top: 0px;
+    padding-top: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Arial", sans-serif;
+}
+.comments h5{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: orange;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    padding-top: 80px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Arial", sans-serif;
+}
+.comcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.comcards .card{
+    height:19em ;
+    margin-bottom: 70px;
+}
+.stars i{
+    color: #efff0a;
+}
+
+/*  */
+.myprojects h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Arial", sans-serif;
+}
+.myprojects{
+    margin-top:50px ;
+}
+
+.projectcard{
+    background-color: white;
+    width:30em;
+    min-height:20em ;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    animation: animate 1.5s;
+}
+
+.projectimage img{
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.7s ease;
+}
+.projectimage img:hover{
+    transform: scale(1.1);
+}
+.textandlink{
+    display: flex;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    justify-content: space-between;
+}
+.projectlink
+{
+    height: 30px;
+    width: 30px;
+    padding: auto;
+    border-radius: 30px;
+    background-color: rgb(163, 158, 150);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.1s;
+}
+.projectlink:hover
+{
+    background-color: orange;
+}
+.projectlink i{
+    color: black;
+    font-size: 17px;
+}
+.projectcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.myprojects button{
+    width :100px;
+    height: 50px;
+    margin:20px 20px;
+    border-radius: 10px;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    font-size: medium;
+    font-weight: 545;
+    border-color: orange;
+    background-color: white;
+    transition: 0.7s ease;
+}
+.myprojects button:hover{
+    background-color: orange;
+    transform: scale(1.1);
+}
+.projectbuttom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*  */
+.foottext{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    align-items: center;
+    padding: 60px 50px 10px 50px;
+    color: gray;
+}
+.foottext a{
+    color: gray;
+}
+hr{
+    margin: 0px 50px;
+}
+.footer .para{
+    color:gray;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+@keyframes animate {
+    from{
+        transform: scale(0.6);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+
+.bgcolor{
+    transition: all 1s;
+    background-color:beige;
+}
